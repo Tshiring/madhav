@@ -9,6 +9,7 @@ menu.onclick=()=>{
   }
   else{
     menu.classList.replace("bi-list", "bi-x-circle" );
+    menu.classList.replace("bi-x-circle","bi-list" );
   }
 
 }
