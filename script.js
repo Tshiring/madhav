@@ -18,8 +18,6 @@ window.onscroll = () => {
 }
 const dynamicText = document.querySelector(".typewriter");
 const words = ["UI/UX Designer","Graphic Designer"];
-
-// Variables to track the position and deletion status of the word
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -43,3 +41,29 @@ const typeEffect = () => {
 }
 
 typeEffect();
+
+function capitalizeFirstLetter(element) {
+  element.value = element.value.charAt(0).toUpperCase() + element.value.slice(1);
+}
+
+function validateForm() {
+  let form = document.getElementById('myForm');
+  let elements = form.elements;
+  let valid = true;
+
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i].type !== 'button') {
+      if (elements[i].value.trim() === '') {
+        valid = false;
+        elements[i].placeholder = '';
+      }
+    }
+  }
+
+  if (valid) {
+    alert('Message Sent Successfully.');
+  }
+  if(!valid){
+    alert("Couldn't Send Message.");
+  }
+}

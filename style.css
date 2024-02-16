@@ -16,7 +16,6 @@
 }
 :root{
   font-size: 10px;
-  color: black;
 }
 @keyframes moving {
   0%{
@@ -195,6 +194,12 @@ overflow: hidden;
 .mySocials ul li a i{
   color: rgba(50, 45, 175, 1);
   font-size: 3.3rem;
+  border-radius: 50px;
+  padding: 10px;
+}
+.mySocials ul li a i:hover{
+  color: #fff;
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
 }
 .heroImage{
   position: relative;
@@ -337,7 +342,7 @@ justify-content: space-between;
  height: 200px;
  width: 100%;
  background-color: rgba(245, 245, 245, 1);
- box-shadow: 5px 5px 5px  rgba(100, 100, 100, 1);
+ box-shadow: 5px 5px 5px  rgba(130, 130, 130, 1);
  border-radius: 25px;
  padding: 10px;
  z-index: 1;
@@ -563,7 +568,7 @@ padding-left: 25px;
   font-size: 2rem;
 }
 .upperStatBox{
-  background-color: rgba(213, 211, 255, 1);
+  background-color: rgba(225, 225, 250, 1);
   width: 100%;
   height: 50%;
   border-top-left-radius: 25px;
@@ -574,7 +579,7 @@ padding-left: 25px;
   background-color: rgba(245, 245, 245, 1);
   width: 100%;
   height: 50%;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 1);
 }
 .stat div{
   padding: 25px;
@@ -738,11 +743,11 @@ padding-left: 25px;
   width:100%;
   padding:35px 25px 35px 25px;
   background-color: rgba(245, 245, 245, 1);
+  border-bottom:5px solid rgba(50, 45, 175, 1);
 }
 .form-title{
   text-align: center;
   font-size: 2rem;
-  letter-spacing: 0.5px;
   color: rgba(50, 45, 175, 1);
 }
 form{
@@ -757,6 +762,7 @@ form{
 }
 .form-fields input,
 .form-fields textarea{
+  font-weight: 500;
   border: none;
   outline:none;
   background: none;
@@ -794,40 +800,45 @@ form{
   box-shadow: 5px 5px 10px #b1b1b1, -5px -5px 10px #fff;
   transition: 0.5s;
 }
-
 @media screen and (max-width: 1200px) {
   .form-wrap{
-      width: 100%;
-      height: inherit;
-      float: none;  
+    width: 100%;
+    height: inherit;
+    float: none;  
   }
   .form-group{
-      width: 100%;
-      margin: 25px 0px;
+    width: 100%;
+    margin: 25px 0px;
   }
   .form-fields .form-group:last-child, 
   .submit-button{
-      width: 100%;
+    width: 100%;
   }
 }
- 
-  /* footer section */
-  footer{
-    background-image: url("./img/headerBackground.png");
+
+/* footer section */
+footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    padding: 25px 0;
   }
   footer ul li{
     display: flex;
-    gap: 25px;
+    gap: 10px;
   }
   footer ul li a i{
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: rgba(50, 45, 175, 1);
+    border-radius: 50px;
+    padding: 10px;
   }
+  footer ul li a i:hover{
+    color: #fff;
+    background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
+    }
   .copyright{
     font-size: 1.5rem;
   }
