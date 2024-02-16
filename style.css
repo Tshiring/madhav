@@ -42,13 +42,13 @@ section{
   padding: 7.5%;
 }
 .topBlue{
-  background-color: rgba(52, 46, 173, 1);
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
   height: 25px;
   width: 100%;
   position: relative;
 }
-.topBlue_whiteLine{
-  background-color: white;
+.topBlue_#fffLine{
+  background-color: #fff;
   height: 5px;
   width: 100%;
   position: absolute;
@@ -78,13 +78,13 @@ header{
   height: 2.5px;
   border-radius: 10px;
   width: 0;
-  background-color: rgba(52, 46, 173, 1) ;
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
 }
 .navLinks a:hover::before{
   width: 100%;
 }
 .hireBtn{
-  background-color: rgba(52, 46, 173, 1);
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
   border: none;
   padding: 10px;
   border-radius: 15px;
@@ -92,7 +92,7 @@ header{
   cursor: pointer;
 }
 .hireBtn a{
-  color: white;
+  color: #fff;
   font-size: 2rem;
 }
 #menuBtn{
@@ -136,15 +136,19 @@ overflow: hidden;
   font-size: 2.5rem;
 }
 .myName{
-  color: rgba(52, 46, 173, 1);
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
   font-size: 5rem;
+  color: transparent;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .transparentText{
   font-family: sans-serif;
   font-size: 5rem;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  color: rgba(52, 46, 173, 1);;
+  color: rgba(50, 45, 175, 1);
 }
 .typewriter {
   position: relative;
@@ -166,13 +170,13 @@ overflow: hidden;
   margin: 10px 0 0 0;
 }
 .heroBtn a{
-  color: rgba(52, 46, 173, 1);
+  color: rgba(50, 45, 175, 1);
   text-decoration: underline;
   font-size: 2.5rem;
   font-weight: 600;
 }
 .downloadCV{
-  background-color: rgba(52, 46, 173, 1);
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -180,7 +184,7 @@ overflow: hidden;
 }
 .downloadCV a{
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
   font-weight: 500;
   text-decoration: none;
 }
@@ -189,7 +193,7 @@ overflow: hidden;
   gap: 25px;
 }
 .mySocials ul li a i{
-  color: rgba(52, 46, 173, 1);
+  color: rgba(50, 45, 175, 1);
   font-size: 3.3rem;
 }
 .heroImage{
@@ -232,7 +236,7 @@ overflow: hidden;
     padding: auto;
     display: flex;
     z-index: 10;
-    background-color: rgba(52, 46, 173, 1);
+    background-color: rgba(50, 45, 175, 1);
     position: absolute;
     top: 150px;
     width: 75%;
@@ -249,7 +253,7 @@ overflow: hidden;
     flex-direction: column;
   }
   .navLinks ul li a{
-    color: white;
+    color: #fff;
     font-size: 50px;
   }
   .menu_active{
@@ -299,8 +303,12 @@ justify-content: space-between;
   z-index: 1;
 }
 .colorBlue{
-  color: rgba(52, 46, 173, 1);
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
   font-size: 5rem;
+  color: transparent;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
   z-index: 1;
 }
 .aboutDescription{
@@ -328,7 +336,7 @@ justify-content: space-between;
  display: flex;
  height: 200px;
  width: 100%;
- background-color: whitesmoke;
+ background-color: rgba(245, 245, 245, 1);
  box-shadow: 5px 5px 5px  rgba(100, 100, 100, 1);
  border-radius: 25px;
  padding: 10px;
@@ -361,13 +369,13 @@ justify-content: space-between;
   margin-top: 10px;
 }
 .myWorkLink a i{
-  color: rgba(52, 46, 173, 1);
+  color: rgba(50, 45, 175, 1);
   font-size: 1.5rem;
 }
 .myWorkLink div{
   display: flex;
   border-radius: 50%;
-  border: 2.5px solid rgba(52, 46, 173, 1);
+  border: 2.5px solid rgba(50, 45, 175, 1);
   background-color: transparent;
   padding: 10px;
 }
@@ -379,7 +387,7 @@ justify-content: space-between;
   border: rgba(254, 109, 52, 1);
 }
 .myWorkLink a i:hover{
-color: white;
+color: #fff;
 }
 .aboutBottomDesign{
   display: flex;
@@ -450,16 +458,16 @@ color: white;
 }
 .overlay p{
   font-size: 3.5rem;
-  color: white;
+  color: #fff;
 }
 .overlay p i{
   font-size: 2rem;
-  color: white;
+  color: #fff;
   padding-left: 10px;
 }
 .overlay p a{
   font-size: 2rem;
-  color: white;
+  color: #fff;
   position: relative;
   font-weight: 500;
 }
@@ -468,7 +476,7 @@ color: white;
   position: absolute;
   bottom: -2.5px;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   height: 1.5px;
   transition: all ease 0.5s;
 }
@@ -488,7 +496,7 @@ color: white;
   display: flex;
   z-index: 1;
   flex-direction: column;
-  background-color: rgba(52, 46, 173, 1);
+  background-color: rgba(50, 45, 175, 1);
   justify-content: center;
   padding:25px;
   position: absolute;
@@ -563,7 +571,7 @@ padding-left: 25px;
 .lowerStatBox{
   text-align: center;
   border-bottom-right-radius: 25px;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 1);
   width: 100%;
   height: 50%;
   box-shadow: 5px 5px 5px black;
@@ -586,7 +594,7 @@ padding-left: 25px;
 }
 .testimonialTitle{
   font-size: 2rem;
-  color: rgba(52, 46, 173, 1);
+  color: rgba(50, 45, 175, 1);
 }
 .testimonialHeading{
   display: flex;
@@ -633,7 +641,7 @@ padding-left: 25px;
 }
 .clientName{
   font-size: 2rem;
-  color: rgba(52, 46, 173, 1);
+  color: rgba(50, 45, 175, 1);
 }
 .clientPost{
   font-size: 1.5rem;
@@ -684,7 +692,7 @@ padding-left: 25px;
 }
 .allClientsTitle{
   font-size: 2rem;
-  color: rgba(52, 46, 173, 1);
+  color: rgba(50, 45, 175, 1);
 }
 .allClientsText{
   font-size: 5rem;
@@ -723,23 +731,103 @@ padding-left: 25px;
     font-size: 3.3rem;
   }
 }
-/* footer section */
-footer{
-  background-image: url("./img/footerBackground.png");
+
+
+/* contact  section*/
+.form-wrap{
+  width:100%;
+  padding:35px 25px 35px 25px;
+  background-color: rgba(245, 245, 245, 1);
+}
+.form-title{
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: rgba(50, 45, 175, 1);
+}
+form{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
 }
-footer ul li{
-  display: flex;
-  gap: 25px;
+.form-fields{
+  display: table;
+  width: 100%;
+  padding: 15px 5px 5px 5px;
 }
-footer ul li a i{
-  font-size: 3rem;
-  color: white
+.form-fields input,
+.form-fields textarea{
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 2rem;
+  padding: 20px 10px 20px 10px;
+  width:100%
 }
-.copyright{
-  font-size: 1.5rem;
+.form-fields textarea{
+  height: 150px;
+  resize: none;
 }
+.form-group{
+  width: 45%;
+  float: left;
+  padding: 0px 30px;
+  margin: 14px 12px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbcbcb, inset -8px -8px 8px #ffffff;
+}
+.form-fields .form-group:last-child {
+  width: 92%;
+}
+.submit-button{
+  width: 35%;
+  height: 75px;
+  border-radius: 30px;
+  font-size: 2rem;;
+  font-weight: 600;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  color:white;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(120,35,150,1) 0%, rgba(50,35,150,1) 50%);
+  box-shadow: 5px 5px 10px #b1b1b1, -5px -5px 10px #fff;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .form-wrap{
+      width: 100%;
+      height: inherit;
+      float: none;  
+  }
+  .form-group{
+      width: 100%;
+      margin: 25px 0px;
+  }
+  .form-fields .form-group:last-child, 
+  .submit-button{
+      width: 100%;
+  }
+}
+ 
+  /* footer section */
+  footer{
+    background-image: url("./img/headerBackground.png");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  footer ul li{
+    display: flex;
+    gap: 25px;
+  }
+  footer ul li a i{
+    font-size: 3rem;
+    color: rgba(50, 45, 175, 1);
+  }
+  .copyright{
+    font-size: 1.5rem;
+  }
