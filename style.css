@@ -160,6 +160,30 @@ overflow: hidden;
   top: 50%;
   right: -10px;
 }
+.heroBtn{
+  display: flex;
+  gap: 25px;
+  margin: 10px 0 0 0;
+}
+.heroBtn a{
+  color: rgba(52, 46, 173, 1);
+  text-decoration: underline;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.downloadCV{
+  background-color: rgba(52, 46, 173, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.downloadCV a{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
 .mySocials ul li{
   display: flex;
   gap: 25px;
@@ -173,7 +197,6 @@ overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
 }
 .heroImage img{
   position: absolute;
@@ -201,8 +224,8 @@ overflow: hidden;
   .hero{
   display: flex;
   flex-direction: column;
-  gap: 350px;
-  height: 150vh;
+  gap: 250px;
+  height: 135vh;
   padding-bottom: 50px;
   }
   .navLinks{
@@ -367,7 +390,7 @@ color: white;
   z-index: -1;
 }
 
-@media  screen and (max-width:1200px) {
+@media screen and (max-width:1200px) {
   .me{
     flex-direction: column;
     gap: 50px;
@@ -391,9 +414,14 @@ color: white;
 /* portfolio section */
 .portfolio{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-image:url(./img/background.png);
   height: auto;
+}
+.portfolioLeft{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .portfolioText{
   margin-bottom: 25px;
@@ -421,39 +449,53 @@ color: white;
   height: 100%;
 }
 .overlay p{
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: white;
 }
+.overlay p i{
+  font-size: 2rem;
+  color: white;
+  padding-left: 10px;
+}
 .overlay p a{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
   position: relative;
+  font-weight: 500;
 }
 .overlay p a::before{
   content: "";
   position: absolute;
   bottom: -2.5px;
-  width: 0;
+  width: 100%;
   background-color: white;
-  height: 2.5px;
+  height: 1.5px;
   transition: all ease 0.5s;
 }
 .overlay p a:hover::before{
-  width: 100%;
+  height: 3.5px;
+  animation: underline 0.5s linear;
+}
+@keyframes underline {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
 }
 .overlay{
   display: flex;
   z-index: 1;
   flex-direction: column;
-  gap: 25px;
   background-color: rgba(52, 46, 173, 1);
   justify-content: center;
-  padding: 25px;
+  padding:25px;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 35%;
   opacity: 0;
 }
 .portfolioWork:hover .overlay{
@@ -482,6 +524,10 @@ padding-left: 25px;
 @media screen  and (max-width:1200px){
   .portfolioRight{
     display: none;
+  }
+  .portfolioLeft{
+    gap: 10px;
+    justify-content: center;
   }
 }
 
