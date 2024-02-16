@@ -9,12 +9,12 @@ menu.onclick=()=>{
   }
   else{
     menu.classList.replace("bi-list", "bi-x-circle" );
-    menu.classList.replace("bi-x-circle","bi-list" );
   }
-
+  
 }
 window.onscroll = () => {
   navLinks.classList.remove('menu_active');
+  menu.classList.replace("bi-x-circle","bi-list" );
 }
 const dynamicText = document.querySelector(".typewriter");
 const words = ["UI/UX Designer","Graphic Designer"];
